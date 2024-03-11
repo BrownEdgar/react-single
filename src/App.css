@@ -1,4 +1,19 @@
 .App {
   margin: 0 auto;
   padding: 1em;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+.Blogs{
+  display: flex;
+  gap: 10px;
+}
+.Blogs>div>h5{
+  color: grey;
+  font-weight: 300;
+}
+button{
+  border: none;
+  border-bottom: 3px solid;
+  cursor: pointer;
 }
