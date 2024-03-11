@@ -4,16 +4,39 @@
   text-align: center;
   background-color: rgb(241, 241, 241);
 }
-.Blogs{
+
+.Blogs {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
-.Blogs>div>h5{
+
+.Blogs>div {
+  padding: 1em;
+  background-color: #fff;
+  flex-basis: 32%;
+
+}
+
+.Blogs>div>h5 {
   color: grey;
   font-weight: 300;
 }
-button{
+
+.Blogs>div>p {
+  height: 80px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.Blogs>div>p.active {
+  height: 250px;
+  transition: height 0.5s;
+}
+
+button {
   border: none;
+  background: transparent;
   border-bottom: 3px solid;
   cursor: pointer;
 }
