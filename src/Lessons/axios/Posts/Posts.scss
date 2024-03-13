@@ -1,0 +1,43 @@
+.Posts {
+  display: flex;
+  width: 96%;
+  margin: 50px auto;
+  padding: 1em;
+  flex-wrap: wrap;
+  gap: 24px;
+  &__item {
+    flex-basis: 32%;
+    padding: 1em;
+    background-color: #111;
+    color: bisque;
+    border-radius: 8px;
+    border: 4px solid orangered;
+    position: relative;
+    span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    i {
+      color: #fff;
+      transition: all 0.3s;
+      cursor: pointer;
+      font-size: 24px;
+      &.bi-clipboard-check {
+        color: palegreen;
+        &::after {
+          position: absolute;
+          top: 20%;
+          left: -50px;
+          font-size: 12px;
+          content: "copied!";
+        }
+      }
+      &:active {
+        font-size: 22px;
+        color: palegreen;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
