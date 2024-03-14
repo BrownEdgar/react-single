@@ -22,9 +22,13 @@
       bottom: 10px;
       right: 10px;
       cursor: pointer;
+      &.bi-check{
+        color: red;
+        font-size: 22px;
+      }
       &:active{
-        scale: 0.8;
-        color: greenyellow;
+        scale: 0.95;
+        color: red;
         transition: 0.2s;
       }
     }
