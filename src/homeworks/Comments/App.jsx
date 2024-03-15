@@ -7,7 +7,6 @@ export default function App() {
   const [comments, setComments] = useState([])
   const [isCopied, setIsCopied] = useState(false)
   const [currentQuot, setCurrentQuot] = useState(null)
-  const [liked, setLiked] = useState(false)
 
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/comments",{
@@ -29,9 +28,14 @@ export default function App() {
     navigator.clipboard.writeText(body)
   }
 
-  const handleLike = (id)=>{
-    setLiked(true)
-    setCurrentQuot(id)
+  const handleLike = (id)=>{  
+    const result = comments.map(elem=>{
+      if(elem.id === id){
+        elem.like =!elem.like
+      }
+      return elem
+    })
+    setComments(result)
   }
 
   return (
@@ -43,8 +47,8 @@ export default function App() {
               <h3>{elem.name}</h3>
               <p>{elem.body}</p>
               <i class={classNames("bi",{
-                "bi-heart-fill": liked && elem.id === currentQuot,
-                "bi-heart": !(liked && elem.id === currentQuot)
+                "bi-heart-fill": elem.like,
+                "bi-heart": !elem.like
               })} title="like" onClick={()=>handleLike(elem.id)}></i>
               <i class={classNames("bi",{
                 "bi-check": isCopied && elem.id === currentQuot,
