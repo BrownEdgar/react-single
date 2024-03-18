@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div className='App'>
       {isOpen ? (
-        <Modal title='Are you sure' arr={["sad", "as", 5, true]}>
+        <Modal title='Are you sure' toggleModal={toggleModal}>
           <button onClick={toggleModal}>close</button>
           <button onClick={deletElementByName}>DELETE</button>
         </Modal>

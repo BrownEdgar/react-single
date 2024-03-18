@@ -6,6 +6,8 @@
 
 body {
   max-width: 1440px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin: 0 auto;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
@@ -17,4 +19,18 @@ a {
 
 ul {
   list-style: none;
+}
+
+pre {
+  margin: 50px auto;
+  display: block;
+  width: 500px;
+  padding: 2em;
+  min-height: 200px;
+  color: papayawhip;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #111;
+  border-radius: 24px;
+  overflow: hidden;
+  white-space: pre-line;
 }
