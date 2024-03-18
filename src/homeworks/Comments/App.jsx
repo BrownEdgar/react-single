@@ -9,16 +9,16 @@ export default function App() {
   const [currentQuot, setCurrentQuot] = useState(null)
 
   useEffect(() => {
-    axios("https://jsonplaceholder.typicode.com/comments",{
-      params:{
-        _limit:11
+    axios("https://jsonplaceholder.typicode.com/comments", {
+      params: {
+        _limit: 11
       }
     })
-    .then(res=>setComments(res.data))
-    .catch(err=>console.log(err))
+      .then(res => setComments(res.data))
+      .catch(err => console.log(err))
   }, [])
 
-  const handleCopy = (body, id)=>{
+  const handleCopy = (body, id) => {
     setIsCopied(true)
     setCurrentQuot(id)
     setTimeout(() => {
@@ -28,10 +28,10 @@ export default function App() {
     navigator.clipboard.writeText(body)
   }
 
-  const handleLike = (id)=>{  
-    const result = comments.map(elem=>{
-      if(elem.id === id){
-        elem.like =!elem.like
+  const handleLike = (id) => {
+    const result = comments.map(elem => {
+      if (elem.id === id) {
+        elem.like = !elem.like
       }
       return elem
     })
@@ -41,20 +41,20 @@ export default function App() {
   return (
     <div className='Comments'>
       {
-        comments.map(elem=>{
-          return(
+        comments.map(elem => {
+          return (
             <div key={elem.id} className='Comments_content'>
               <h3>{elem.name}</h3>
               <p>{elem.body}</p>
-              <i class={classNames("bi",{
+              <i className={classNames("bi", {
                 "bi-heart-fill": elem.like,
                 "bi-heart": !elem.like
-              })} title="like" onClick={()=>handleLike(elem.id)}></i>
-              <i class={classNames("bi",{
+              })} title="like" onClick={() => handleLike(elem.id)}></i>
+              <i className={classNames("bi", {
                 "bi-check": isCopied && elem.id === currentQuot,
                 "bi-copy": !(isCopied && elem.id === currentQuot),
               })}
-              title='copy' onClick={()=> handleCopy(elem.body, elem.id)}></i>
+                title='copy' onClick={() => handleCopy(elem.body, elem.id)}></i>
             </div>
 
           )

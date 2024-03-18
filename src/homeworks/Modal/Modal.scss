@@ -1,4 +1,4 @@
-.Modal{
+.Modal {
   position: fixed;
   inset: 0 0 0 0;
   width: 100%;
@@ -8,23 +8,29 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  &__content{
+  &__content {
     width: max(500px, 30%);
     padding: 1em;
     background-color: #fff;
     position: relative;
     border-radius: 10px;
     text-align: center;
-    .bi{
+    .bi {
       font-size: 30px;
       margin: 20px;
       color: red;
       cursor: pointer;
-      &:hover{
-        font-size: 35px;
+      &::before {
+        transition: 0.3s;
+      }
+      &:hover {
+        &::before {
+          transition: 0.5s;
+          scale: 1.2;
+        }
       }
     }
-    .bi-check-circle{
+    .bi-check-circle {
       color: green;
     }
   }

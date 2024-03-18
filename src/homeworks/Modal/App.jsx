@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./App.scss"
 import axios from "axios"
-import classNames from 'classnames'
+
 import Modal from "./Modal"
 
 export default function App() {
@@ -11,24 +11,24 @@ export default function App() {
 
   useEffect(() => {
     axios("https://dummyjson.com/todos")
-      .then(res=>setTodos(res.data.todos))
-      .catch(err=>console.log(err))
+      .then(res => setTodos(res.data.todos))
+      .catch(err => console.log(err))
   }, [])
 
-  const handleDelete = ()=>setIsOpen(!isOpen)
-  const deleteElementById = ()=>{
-    setTodos((prevTodos)=>prevTodos.filter(elem=> elem.id !== deletedItem));
+  const handleDelete = () => setIsOpen(!isOpen)
+  const deleteElementById = () => {
+    setTodos((prevTodos) => prevTodos.filter(elem => elem.id !== deletedItem));
     handleDelete()
   }
 
   return (
     <div className='Todos'>
-      {isOpen ? <Modal handleDelete={handleDelete} deleteElementById={deleteElementById}/> : null}
+      {isOpen ? <Modal handleDelete={handleDelete} deleteElementById={deleteElementById} /> : null}
       {
-        todos.map(elem=>{
-          return(
+        todos.map(elem => {
+          return (
             <div className='Todos_content' key={elem.id}>
-              <i class="bi bi-x-circle" onClick={()=>{
+              <i className="bi bi-x-circle" onClick={() => {
                 handleDelete()
                 setDeletedItem(elem.id)
               }}></i>
