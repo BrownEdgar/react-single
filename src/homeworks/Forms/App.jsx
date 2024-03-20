@@ -18,24 +18,21 @@ export default function App() {
     //   name: username.value,
     //   email: email.value
     // })
-
-    setUsers([...users,{
+    const user = {
       id: x,
       name: username.value,
       email: email.value
-    }])
-
+    }
+    setUsers([...users,user])
+    
     // users.forEach(elem=>{
-    //   if(elem.email !== email.value){
-    //     setUsers([...users,{
-    //       id: x,
-    //       name: username.value,
-    //       email: email.value
-    //     }])
+    //   if(elem.email !== user.email){
+        
     //   }else{
     //     alert("Sorry this email is busy")
     //   }
     // })
+    e.target.reset()
   }
 
   return (
