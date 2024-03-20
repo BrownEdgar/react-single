@@ -15,14 +15,23 @@ form {
       border: 0;
       cursor: pointer;
       font-size: 22px;
+      &:disabled {
+        background-color: #a99e9e;
+        color: #fff;
+        cursor: no-drop;
+      }
     }
   }
-  .error {
-    margin-left: 10px;
-    height: 20px;
-    color: #ff0404;
-    margin-bottom: 12px;
-    font-weight: 500;
+  .errors {
+    &-item {
+      color: #fff;
+      font-size: 16px;
+      line-height: 1;
+      background-color: #b33434;
+      margin-bottom: 12px;
+      font-weight: 500;
+      padding: 10px;
+    }
   }
 }
 
