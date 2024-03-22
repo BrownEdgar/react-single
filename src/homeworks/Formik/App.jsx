@@ -49,11 +49,17 @@ export default function App() {
         <Form>
           <h1>Login Form</h1>
           <Field type="text" name="username" placeholder="Username" />
-          <ErrorMessage name="username" component="p" className="error"/>
+          <div className="errorMessage">
+            <ErrorMessage name="username" component="p" className="error"/>
+          </div>
           <Field type="password" name="password" placeholder="Password"/>
-          <ErrorMessage name="password" component="p" className="error"/>
+          <div className="errorMessage">
+            <ErrorMessage name="password" component="p" className="error"/> 
+          </div>
           <Field type="email" name="email" placeholder="Your Email"/>
-          <ErrorMessage name="email" component="p" className="error"/>
+          <div className="errorMessage">
+            <ErrorMessage name="email" component="p" className="error"/>
+          </div>
           <label>
             <input type="checkbox" name="myCheckbox" defaultChecked={false} /> Remember me
           </label>
