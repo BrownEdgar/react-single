@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { object, string, number } from 'yup';
+import { object, string, number, boolean } from 'yup';
 import { nanoid } from 'nanoid';
 import './App.scss'
 
@@ -8,7 +8,7 @@ const initailValues = {
   username: '',
   age: '',
   language: '',
-  gender: 'male'
+  policy: ''
 }
 
 const validationSchema = object({
@@ -24,7 +24,7 @@ const validationSchema = object({
     .lessThan(63, "duq shat mec eq")
     .required(),
   language: string().oneOf(['javascript', 'react', 'html', 'css']).required(),
-  gender: string().oneOf(['male', 'female']).required(),
+  policy: boolean().isTrue("policy must by true").required(),
 })
 
 
@@ -48,7 +48,7 @@ export default function App() {
         onSubmit={handleSubmit}
         validationSchema={validationSchema}
         validateOnBlur={true}
-        validateOnChange={false}
+        validateOnChange={true}
       >
         {
           (formik) => {
@@ -77,11 +77,11 @@ export default function App() {
                   <option value="html">html</option>
                   <option value="css">css</option>
                 </Field>
-                <p className='checkBoxes'>
-                  <Field name='gender' value='male' type='radio' checked /> male
-                  <Field name='gender' value='female' type='radio' /> female
-                </p>
-                <input type='submit' disabled={!formik.isValid} />
+                <label htmlFor="policy">
+                  <Field type='checkbox' id="policy" name='policy' />
+                  <span>I agree</span>
+                </label>
+                <input type='submit' disabled={!formik.isValid || !formik.values.policy} />
               </Form>
             )
           }

@@ -3,12 +3,24 @@ form {
   margin: 20px auto;
   border: 1px solid #a99e9e;
   padding: 1em;
+  position: relative;
+  label {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
   input,
   select {
     width: 100%;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 10px 0;
     padding: 0.6em;
     font-size: 18px;
+    &[type="checkbox"] {
+      float: left;
+      vertical-align: middle;
+      margin-top: 0;
+      width: 10%;
+    }
     &[type="submit"] {
       background-color: rgb(33, 115, 33);
       color: #fff;
@@ -23,13 +35,18 @@ form {
     }
   }
   .errors {
+    height: 90px;
+    overflow-y: auto;
+
+    width: 100%;
     &-item {
       color: #fff;
       font-size: 16px;
       line-height: 1;
-      background-color: #b33434;
+      background-color: #b33434a9;
       margin-bottom: 12px;
       font-weight: 500;
+
       padding: 10px;
     }
   }
