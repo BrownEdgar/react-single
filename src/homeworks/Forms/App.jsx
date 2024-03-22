@@ -3,35 +3,25 @@ import "./App.scss"
 
 export default function App() {
   const [users, setUsers] = useState([])
-  // const [user, setUser] = useState({
-  //   id: "",
-  //   name: "",
-  //   email: ""
-  // })
   
   const handleSubmit = (e)=>{
     e.preventDefault()
     const { username, email } = e.target;
-    let x = Math.ceil(Math.random()*10000)
-    // setUser({
-    //   id: x,
-    //   name: username.value,
-    //   email: email.value
-    // })
+    
+
+    const isEmailExist = users.some(user=>user.email === email.value.toLowerCase())
+
+    if(isEmailExist){
+      alert('this user is already exist');
+      return;
+    }
+    const id = Math.ceil(Math.random()*10000)
     const user = {
-      id: x,
+      id,
       name: username.value,
-      email: email.value
+      email: email.value.toLowerCase()
     }
     setUsers([...users,user])
-    
-    // users.forEach(elem=>{
-    //   if(elem.email !== user.email){
-        
-    //   }else{
-    //     alert("Sorry this email is busy")
-    //   }
-    // })
     e.target.reset()
   }
 
