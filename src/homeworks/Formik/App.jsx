@@ -61,9 +61,9 @@ export default function App() {
             <ErrorMessage name="email" component="p" className="error"/>
           </div>
           <label>
-            <input type="checkbox" name="myCheckbox" defaultChecked={false} /> Remember me
+            <Field type="checkbox" name="myCheckbox" defaultChecked={false} /> Remember me
           </label>
-          <input type="submit" value="LOGIN HERE"/>
+          <Field type="submit" value="LOGIN HERE"/>
           <p>Don't Have an Account? <a href="#">Sign Up!</a></p>
         </Form>
       </Formik>
