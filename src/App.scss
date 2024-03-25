@@ -1,27 +1,16 @@
 .App {
-  margin: 50px auto;
+  margin: 0px auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 120px 1fr 100px;
+}
+
+footer {
+  background-color: rgb(177, 116, 36);
   padding: 1em;
-  &__container {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    & > div {
-      padding: 1em;
-      background-color: papayawhip;
-      border-radius: 24px;
-      flex-basis: 26%;
-      border: 6px solid teal;
-    }
-  }
-  &__delete {
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    background-color: #ff0505;
-    color: #fff;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    border: 0;
-  }
+
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

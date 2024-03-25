@@ -1,0 +1,17 @@
+.ErrorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  .link {
+    background-color: royalblue;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+  }
+}
