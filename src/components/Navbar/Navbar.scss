@@ -1,0 +1,32 @@
+header{
+  height: 120px;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  width: 1440px;
+  .logo{
+    a > img{
+      height: 100px;
+      border-radius: 80% 20% 85% 15% / 60% 42% 58% 40%  ;
+    }
+  }
+  nav{
+    height: 100%;
+    width: 40%;
+    ul{
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li>a{
+        color: white;
+        font-weight: 700;
+
+      }
+    }
+  }
+}
