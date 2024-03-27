@@ -17,6 +17,10 @@ header {
         font-weight: 700;
         a {
           color: #a49f9f;
+          &.active__link {
+            color: orangered;
+            text-decoration: underline;
+          }
         }
       }
     }

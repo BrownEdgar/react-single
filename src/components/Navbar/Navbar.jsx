@@ -1,29 +1,31 @@
 import React from 'react'
 import './Navbar.scss'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import ROUTES from '../../routes'
+
+const activeClassName = ({ isActive }) => isActive ? "active__link" : '';
+
+const menuList = ['News', 'Posts', 'Work', 'Store']
 
 export default function Navbar() {
   return (
     <header className='Navbar'>
       <div className="logo">
-        <Link to="/">
+        <Link to={ROUTES.HOME}>
           KANT.
         </Link>
       </div>
       <nav>
         <ul>
-          <li>
-            <Link to="/">News</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-          <li>
-            <Link to="/store">Store</Link>
-          </li>
+          {menuList.map(elem => {
+            const path = (elem === 'News')
+              ? ROUTES.NEWS
+              : `${ROUTES[elem.toLocaleUpperCase()]}`
+            return <li key={elem}>
+              <NavLink to={path} className={activeClassName}>{elem}</NavLink>
+            </li>
+          })}
+
         </ul>
       </nav>
     </header>

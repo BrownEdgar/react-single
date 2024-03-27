@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './Services.scss'
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   const [posts, setPosts] = useState([]);
@@ -18,10 +19,9 @@ export default function Services() {
       <div className="Posts">
         {posts.map(elem => {
           return (
-            <div key={elem.id}>
+            <Link key={elem.id} to={`/posts/${elem.id}`}>
               <h2>{elem.title}</h2>
-              <p>{elem.body}</p>
-            </div>
+            </Link>
           )
         })}
       </div>

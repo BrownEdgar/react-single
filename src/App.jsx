@@ -1,22 +1,20 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import News from './pages/News/News'
-import Work from './pages/Work/Work'
-import Services from './pages/Services/Services'
-import ErrorPage from './pages/ErrorPage/ErrorPage'
-import Store from './pages/Store/Store'
+import { News, Post, Services, Store, Work } from './Pages'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.scss'
+import ROUTES from './routes'
 
 export default function App() {
   return (
     <div className='App'>
       <Navbar />
       <Routes>
-        <Route path='/' element={<News />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/work' element={<Work />} />
-        <Route path='/store' element={<Store />} />
+        <Route path={ROUTES.HOME} element={<News />} />
+        <Route path={ROUTES.POSTS} element={<Services />} />
+        <Route path={ROUTES.WORK} element={<Work />} />
+        <Route path={ROUTES.STORE} element={<Store />} />
+        <Route path={ROUTES.POST} element={<Post />} />
         {/* <Route path='*' element={<ErrorPage />} /> */}
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>

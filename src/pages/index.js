@@ -1,0 +1,6 @@
+export { default as News } from './News/News'
+export { default as Services } from './Services/Services'
+export { default as Store } from './Store/Store'
+export { default as Work } from './Work/Work'
+export { default as Post } from './Post/Post'
+export { default as ErrorPage } from './ErrorPage/ErrorPage'
