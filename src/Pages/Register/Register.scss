@@ -1,0 +1,68 @@
+.Register{
+  background-image: url(https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover ;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba($color: #3a3a3a, $alpha: 0.6);
+  }
+  h1{
+    color:rgb(255, 255, 255);
+    z-index: 1;
+  }
+  &__content{
+    z-index: 1;
+    background-color: rgb(35, 82, 86);
+    width: 400px;
+    padding: 1em;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+    input{
+      width: 70%;
+      height: 30px;
+      margin: 5px;
+      border-radius: 15px;
+      border: 0;
+      padding: 1em;
+      font-size: 18px;
+      &[type="submit"]{
+        height: 35px;
+        padding: 0;
+        font-weight: 600;
+        width: 30%;
+        cursor: pointer;
+        &:hover{
+          scale: 0.98;
+          background-color: #d6d6d6;
+        }
+      }
+    }
+    .errors{
+      height: 50px;
+      p{
+        font-size: 10px;
+        color: rgb(242, 115, 115);
+        margin: 0 auto;
+      }
+    }
+    a{
+      font-weight: 700;
+      color: rgb(244, 209, 85);
+      margin-bottom: 20px;
+    }
+  }
+}
