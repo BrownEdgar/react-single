@@ -58,6 +58,62 @@ pre {
   pointer-events: none;
   opacity: 0.5;
   background-color: grey !important;
-
   text-decoration: none;
+}
+
+.slick-slider {
+  width: 1200px;
+  height: 600px;
+  margin: 50px auto;
+  padding-top: 5%;
+}
+
+.slick-list {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.slick-track {
+  height: 90%;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.slick-arrow::before {
+  color: #000;
+  font-size: 35px;
+}
+
+.slick-slide {
+  padding: 1em;
+  height: 100%;
+  scale: 0.8;
+  transition: 0.2s;
+}
+
+.slick-slide>div {
+  height: 100%;
+}
+
+.slick-center {
+
+  width: 400px;
+  scale: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

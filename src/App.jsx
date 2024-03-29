@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { News, Post, Services, Store, Work } from './Pages'
+import { Animals, News, Post, Services, Store, Work } from './Pages'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.scss'
 import ROUTES from './routes'
@@ -14,6 +14,7 @@ export default function App() {
         <Route path={ROUTES.POSTS} element={<Services />} />
         <Route path={ROUTES.WORK} element={<Work />} />
         <Route path={ROUTES.STORE} element={<Store />} />
+        <Route path={ROUTES.ANIMALS} element={<Animals />} />
         <Route path={ROUTES.POST} element={<Post />} />
         {/* <Route path='*' element={<ErrorPage />} /> */}
         <Route path='*' element={<Navigate to={'/'} />} />

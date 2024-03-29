@@ -5,7 +5,7 @@ import ROUTES from '../../routes'
 
 const activeClassName = ({ isActive }) => isActive ? "active__link" : '';
 
-const menuList = ['News', 'Posts', 'Work', 'Store']
+const menuList = ['News', 'Posts', 'Work', 'Store', "Animals"]
 
 export default function Navbar() {
   return (
@@ -20,7 +20,7 @@ export default function Navbar() {
           {menuList.map(elem => {
             const path = (elem === 'News')
               ? ROUTES.NEWS
-              : `${ROUTES[elem.toLocaleUpperCase()]}`
+              : `${ROUTES[elem.toUpperCase()]}`
             return <li key={elem}>
               <NavLink to={path} className={activeClassName}>{elem}</NavLink>
             </li>
