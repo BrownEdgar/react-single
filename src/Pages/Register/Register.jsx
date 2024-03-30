@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import "./Register.scss"
 import {string, object} from "yup"
 import { Link } from 'react-router-dom'
-import {nanoid} from "nanoid"
+
 
 
 const initialValues = {
@@ -14,22 +14,13 @@ const initialValues = {
 
 const validationSchema = object({
   username: string().min(3).max(12).required(),
-  email: string().email().required(),
+  email: string().email().lowercase().required(),
   password: string().min(6).max(12).matches(/[0-9]/, "must contain number").required()
 })
 
-export default function Home() {
-  const [users, setUsers] = useState([])
+export default function Register( {handleSubmit} ) {
   
 
-  const handleSubmit = (values,formik)=>{
-    const user = {
-      ...values,
-      id: nanoid(7)
-    }
-    setUsers([...users, user])
-    formik.resetForm()
-  }
 
   return (
     <div className='Register'>

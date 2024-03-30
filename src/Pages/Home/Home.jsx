@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import "./Home.scss"
 import { Link } from 'react-router-dom'
@@ -6,18 +6,26 @@ import {string, object} from "yup"
 
 const validationSchema = object({
   email: string().email().required(),
-  password: string().min(6).max(12).required()
+  password: string().required()
 })
 
-export default function Home() {
-  const [user, setUser] = useState([])
+export default function Home({users}) {
   const initialValues = {
     email: "",
     password: ""
   }
 
   const handleSubmit = (values,formik)=>{
-    formik.resetForm()
+    const user = users.find(user=>{
+      return user.email === values.email.toLowerCase() &&
+      user.password === values.password;
+    })
+    if(user){
+      alert("SUCCESS")
+      formik.resetForm()
+    }else{
+      alert("WRONG USER")
+    }
   }
 
   return (
