@@ -7,7 +7,17 @@ const activeClassName = ({ isActive }) => isActive ? "active__link" : '';
 
 const menuList = ['News', 'Posts', 'Work', 'Store', "Animals"]
 
-export default function Navbar() {
+export default function Navbar({ isLogin }) {
+  const login = () => {
+    localStorage.setItem('login', true)
+    window.location.href = '/'
+  }
+  const logOut = () => {
+    localStorage.removeItem('login')
+    window.location.href = '/'
+  }
+
+
   return (
     <header className='Navbar'>
       <div className="logo">
@@ -25,7 +35,14 @@ export default function Navbar() {
               <NavLink to={path} className={activeClassName}>{elem}</NavLink>
             </li>
           })}
+          <li>
+            {
+              isLogin
+                ? <button onClick={logOut}>Log Out</button>
+                : <button onClick={login}>Log in</button>
+            }
 
+          </li>
         </ul>
       </nav>
     </header>

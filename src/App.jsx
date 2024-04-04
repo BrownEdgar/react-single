@@ -4,25 +4,30 @@ import { Animals, News, Post, Services, Store, Work } from './Pages'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.scss'
 import ROUTES from './routes'
+import MainLayoutes from './Layouts/MainLayoutes'
+import PrivateRoutes from './Layouts/PrivateRoutes'
 
 export default function App() {
   return (
     <div className='App'>
-      <Navbar />
+
       <Routes>
-        <Route path={ROUTES.HOME} element={<News />} />
-        <Route path={ROUTES.POSTS} element={<Services />} />
-        <Route path={ROUTES.WORK} element={<Work />} />
-        <Route path={ROUTES.STORE} element={<Store />} />
-        <Route path={ROUTES.ANIMALS} element={<Animals />} />
-        <Route path={ROUTES.POST} element={<Post />} />
-        {/* <Route path='*' element={<ErrorPage />} /> */}
-        <Route path='*' element={<Navigate to={'/'} />} />
+        <Route path='/' element={<MainLayoutes />}>
+          <Route index element={<News />} />
+          <Route element={<PrivateRoutes />}>
+            <Route path={ROUTES.POSTS} element={<Services />} />
+            <Route path={ROUTES.WORK} element={<Work />} />
+            <Route path={ROUTES.STORE} element={<Store />} />
+            <Route path={ROUTES.ANIMALS} element={<Animals />} />
+            <Route path={ROUTES.POST} element={<Post />} />
+          </Route>
+
+          {/* <Route path='*' element={<ErrorPage />} /> */}
+          <Route path='*' element={<Navigate to={'/'} />} />
+        </Route>
+
       </Routes>
 
-      <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit similique, soluta excepturi quibusdam laudantium nemo voluptatem reiciendis sequi adipisci.</p>
-      </footer>
 
     </div>
   )

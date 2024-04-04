@@ -6,7 +6,7 @@ header {
   align-items: center;
   nav {
     height: 100%;
-    width: 40%;
+    width: 60%;
     ul {
       height: 100%;
       display: flex;
@@ -21,6 +21,15 @@ header {
             color: orangered;
             text-decoration: underline;
           }
+        }
+        button {
+          padding: 0.6rem 1rem;
+          margin: 0 10px;
+          background-color: royalblue;
+          border-radius: 6px;
+          color: #fff;
+          border: 0;
+          cursor: pointer;
         }
       }
     }
