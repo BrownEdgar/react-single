@@ -1,0 +1,60 @@
+.Blog {
+  margin-top: 150px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.8fr 450px;
+  gap: 50px;
+
+  &__current {
+    text-align: left;
+    h1 {
+      margin-bottom: 20px;
+      font-size: 50px;
+      font-weight: 800;
+      word-wrap: break-word;
+      text-align: left;
+    }
+    img {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    p {
+      margin-bottom: 20px;
+      color: #222;
+      line-height: 1.6;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    & > div {
+      height: 120px;
+      display: flex;
+      gap: 20px;
+      img {
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+      }
+      & > div {
+        text-align: left;
+        a {
+          color: #222;
+          display: block;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        span {
+          color: grey;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

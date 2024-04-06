@@ -1,6 +1,7 @@
 const ROUTES = {
   NEWS: '/',
   WORK: 'work',
+  BLOG: 'work/:id',
   STORE: 'store',
   ANIMALS: 'animals',
   POSTS: 'posts',

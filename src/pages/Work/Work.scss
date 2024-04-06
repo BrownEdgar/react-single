@@ -1,0 +1,53 @@
+@mixin bgRules($imageUrl) {
+  background-image: url($imageUrl);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin layer($bg, $a) {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: rgba($color: $bg, $alpha: $a);
+  z-index: 1;
+}
+
+.Work {
+  height: 100%;
+  &__header {
+    @include bgRules("https://impreza3.us-themes.com/wp-content/uploads/2015/10/header-image.jpg");
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      position: relative;
+      z-index: 10;
+      color: #fff;
+      font-weight: 200;
+      font-size: 4em;
+      letter-spacing: 8px;
+    }
+    &::before {
+      @include layer(#222329, 0.8);
+    }
+  }
+  &__wrapper {
+    padding: 1em;
+    margin: 50px auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    & > a {
+      color: #222;
+      overflow: hidden;
+      img {
+        width: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}

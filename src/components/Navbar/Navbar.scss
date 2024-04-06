@@ -1,9 +1,13 @@
 header {
   padding: 2em;
-  background-color: rgb(227, 227, 227);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
   nav {
     height: 100%;
     width: 60%;
@@ -16,10 +20,9 @@ header {
         text-transform: uppercase;
         font-weight: 700;
         a {
-          color: #a49f9f;
+          color: #ffffff;
           &.active__link {
             color: orangered;
-            text-decoration: underline;
           }
         }
         button {
@@ -32,6 +35,13 @@ header {
           cursor: pointer;
         }
       }
+    }
+  }
+  .logo {
+    a {
+      color: bisque;
+      font-size: 40px;
+      letter-spacing: 2px;
     }
   }
 }
