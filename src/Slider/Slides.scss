@@ -9,20 +9,17 @@
     color: white;
   }
   .slick-slider{
-    height: auto;
-    width: 1000px;
+    height: 260px;
+    width: 1200px;
     .slick-list{
-      height: 260px;
       .slick-track{
         height: 260px;
         .slick-slide{
-          background-color: white;   
-          margin-left: 60px;
-          height: 260px;
-
+          color: white;
+          height: 100%;
           div{
             height: 260px;
-            width: 200px;
+            padding: 10px;
             img{ 
               width: 100%;
               height: 70%; 
