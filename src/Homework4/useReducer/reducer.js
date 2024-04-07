@@ -22,7 +22,9 @@ const reducer = (state = initialState, action)=>{
     case Actions.ADD: return {...state, arr: [...state.arr, action.payload]};
     case Actions.SHUFFLE: return {...state, arr : shuffle(state.arr)};
     case Actions.DELETE: return {...state, arr: state.arr.filter(elem=>elem>10)}
-    // case "changeName": console.log(action.payload)
+    case Actions.CHANGE_AGE: return {...state, user: {...state.user, age: action.payload}}
+    case Actions.ADD_DEVELOPER: return {...state, developers: [...state.developers, action.payload]}
+    case Actions.CHANGE_USER_NAME: return {...state, user: {...state.user, name: action.payload}}
      
     default: return state
   }
