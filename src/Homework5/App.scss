@@ -1,14 +1,13 @@
-.App{
+.App {
   background-color: rgb(251, 207, 96);
   text-align: center;
-  &__content{
+  &__content {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     text-align: center;
-    &> div{
-      background-color: rgb(22, 100, 74);
+    & > div {
       height: 200px;
       width: 300px;
       border-radius: 25px;
@@ -16,7 +15,63 @@
       color: white;
       display: flex;
       flex-direction: column;
-      align-items: center; 
-    }  
-  }   
-}  
+      align-items: center;
+      &.red {
+        background-color: rgb(125, 33, 39);
+      }
+      &.green {
+        background-color: rgb(22, 100, 74);
+      }
+    }
+  }
+  &__buttons {
+    margin: 20px auto;
+    display: flex;
+    padding: 1em;
+    gap: 20px;
+    align-items: center;
+
+    width: 90%;
+
+    button,
+    select {
+      padding: 0.6rem 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 0;
+      border-radius: 6px;
+      color: goldenrod;
+      background-color: #1d1d1d;
+    }
+  }
+  form {
+    flex-grow: 1;
+    input {
+      width: 100%;
+      padding: 0.6rem 1.5rem;
+      font-size: 18px;
+      border-radius: 20px;
+      border: 0;
+      min-width: 200px;
+    }
+  }
+  .faundCount {
+    margin-left: auto;
+    padding: 8px 24px;
+    background-color: cornflowerblue;
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span {
+      padding-top: 6px;
+      border-radius: 20px;
+      background-color: purple;
+      width: 36px;
+
+      height: 36px;
+    }
+  }
+}
