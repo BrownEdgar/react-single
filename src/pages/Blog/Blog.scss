@@ -21,10 +21,32 @@
     }
   }
   &__content {
+    &-list {
+      margin: 30px auto;
+      list-style-type: disc;
+      li {
+        margin-bottom: 12px;
+        &::marker {
+          color: rgb(255, 72, 0);
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+    }
     p {
       margin-bottom: 20px;
       color: #222;
       line-height: 1.6;
+    }
+    &-footer {
+      padding: 1em 0;
+      display: flex;
+      gap: 12px;
+      span {
+        &.icon {
+          cursor: pointer;
+        }
+      }
     }
   }
   &__list {
@@ -50,8 +72,12 @@
           margin-bottom: 10px;
         }
         span {
-          color: grey;
-          font-weight: 300;
+          i {
+            margin-right: 12px;
+            color: orangered;
+          }
+          color: rgb(10, 9, 9);
+          font-weight: 500;
           font-size: 14px;
         }
       }

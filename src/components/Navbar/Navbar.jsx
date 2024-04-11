@@ -5,7 +5,7 @@ import ROUTES from '../../routes'
 
 const activeClassName = ({ isActive }) => isActive ? "active__link" : '';
 
-const menuList = ['News', 'Posts', 'Work', 'Store', "Animals"]
+const menuList = ['News', 'Posts', 'Work', 'Store', "Animals", "add_blog"]
 
 export default function Navbar({ isLogin }) {
   const login = () => {
@@ -28,6 +28,7 @@ export default function Navbar({ isLogin }) {
       <nav>
         <ul>
           {menuList.map(elem => {
+
             const path = (elem === 'News')
               ? ROUTES.NEWS
               : `${ROUTES[elem.toUpperCase()]}`

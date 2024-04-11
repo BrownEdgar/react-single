@@ -3,10 +3,10 @@ import blogReducer, { initialState } from './blogReducer'
 import { Link } from 'react-router-dom'
 import './Work.scss'
 import axios from 'axios'
+import moment from 'moment'
 
 export default function Work() {
   const [state, dispatch] = useReducer(blogReducer, initialState)
-
 
   useEffect(() => {
     axios('http://localhost:3000/blogs')
@@ -25,7 +25,7 @@ export default function Work() {
             <Link key={elem.id} to={`${elem.id}`}>
               <img src={elem.poster} />
               <h2>{elem.title}</h2>
-              <p>{elem.createdAt}</p>
+              <p>{moment(elem.createdAt).format("DD MMM YYYY")}</p>
             </Link>
           )
         })}

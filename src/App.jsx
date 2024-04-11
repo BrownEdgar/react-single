@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { Animals, Blog, News, Post, Services, Store, Work } from './Pages'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { AddBlog, Animals, Blog, ErrorPage, News, Post, Services, Store, Work } from './Pages'
+import { Routes, Route } from 'react-router-dom'
 import './App.scss'
 import ROUTES from './routes'
 import MainLayoutes from './Layouts/MainLayoutes'
@@ -19,12 +19,13 @@ export default function App() {
             <Route path={ROUTES.WORK} element={<Work />} />
             <Route path={ROUTES.BLOG} element={<Blog />} />
             <Route path={ROUTES.STORE} element={<Store />} />
+            <Route path={ROUTES.ADD_BLOG} element={<AddBlog />} />
             <Route path={ROUTES.ANIMALS} element={<Animals />} />
             <Route path={ROUTES.POST} element={<Post />} />
           </Route>
 
-          {/* <Route path='*' element={<ErrorPage />} /> */}
-          <Route path='*' element={<Navigate to={'/'} />} />
+          <Route path='*' element={<ErrorPage />} />
+          {/* <Route path='*' element={<Navigate to={'/'} />} /> */}
         </Route>
 
       </Routes>

@@ -1,0 +1,35 @@
+.AddBlog {
+  text-align: center;
+  margin-top: 150px;
+  &__form {
+    width: 700px;
+    min-height: 350px;
+    margin: 20px auto;
+
+    form {
+      width: 50%;
+      min-width: 400px;
+      margin: 20px auto;
+      .form-group {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 12px;
+        input,
+        textarea {
+          margin: 5px auto;
+          padding: 0.6rem 1rem;
+          font-size: 20px;
+          border-radius: 8px;
+          width: 100%;
+          border: 2px solid #8f8f8f;
+          color: #1d1d1d;
+        }
+        textarea {
+          resize: none;
+        }
+      }
+    }
+  }
+}

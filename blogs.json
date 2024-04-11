@@ -14,7 +14,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 13
     },
     {
       "id": "2",
@@ -30,7 +31,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 28
     },
     {
       "id": "3",
@@ -46,7 +48,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 13
     },
     {
       "id": "4",
@@ -62,7 +65,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 3
     },
     {
       "id": "5",
@@ -78,7 +82,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 12
     },
     {
       "id": "6",
@@ -94,7 +99,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 5
     },
     {
       "id": "7",
@@ -127,6 +133,28 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05"
+    },
+    {
+      "id": "IOPNA",
+      "title": "my first post with formik",
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusamus laboriosam, esse ea quis dolorum repellat harum dolor commodi eum rem in deleniti tempore quo voluptatem nostrum omnis assum",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusamus laboriosam, esse ea quis dolorum repellat harum dolor commodi eum rem in deleniti tempore quo voluptatem nostrum omnis assum"
+      ],
+      "poster": "/images/blog1300.jpg",
+      "createdAt": "2024-04-11T14:36:13+04:00",
+      "claps": 6
+    },
+    {
+      "id": "slLC1",
+      "title": "dsadsadasd sald nsald ",
+      "description": [
+        "dsa;lkjads k",
+        "dsadsadsa"
+      ],
+      "poster": "/images/blog-8.jpg",
+      "createdAt": "2024-04-11T14:38:32+04:00",
+      "claps": 0
     }
   ]
 }

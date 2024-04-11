@@ -43,8 +43,9 @@
     gap: 30px;
     & > a {
       color: #222;
-      overflow: hidden;
+
       img {
+        height: 300px;
         width: 400px;
         object-fit: cover;
       }
