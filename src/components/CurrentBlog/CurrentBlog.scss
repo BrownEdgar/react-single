@@ -1,0 +1,53 @@
+.CurrentBlog {
+  text-align: left;
+  h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    &-list {
+      margin: 30px auto;
+      list-style-type: disc;
+      li {
+        margin-bottom: 12px;
+        &::marker {
+          color: rgb(255, 72, 0);
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+    }
+    p {
+      margin-bottom: 20px;
+      color: #222;
+      line-height: 1.6;
+    }
+    &-footer {
+      padding: 1em 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      span {
+        &.icon {
+          cursor: pointer;
+          img {
+            width: 24px;
+            float: left;
+          }
+          em {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

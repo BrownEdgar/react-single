@@ -1,0 +1,20 @@
+.DisplayDate {
+  color: rgb(10, 9, 9);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+  & > .bi {
+    margin-right: 12px;
+    display: inline-block;
+    color: orangered !important;
+    &-md {
+      font-size: 14px;
+    }
+    &-lg {
+      font-size: 18px;
+    }
+    &-xl {
+      font-size: 24px;
+    }
+  }
+}

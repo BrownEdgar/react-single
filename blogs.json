@@ -15,7 +15,7 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05",
-      "claps": 13
+      "claps": 23
     },
     {
       "id": "2",
@@ -32,7 +32,7 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05",
-      "claps": 28
+      "claps": 57
     },
     {
       "id": "3",
@@ -49,7 +49,7 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05",
-      "claps": 13
+      "claps": 35
     },
     {
       "id": "4",
@@ -100,7 +100,7 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05",
-      "claps": 5
+      "claps": 9
     },
     {
       "id": "7",
@@ -116,7 +116,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 23
     },
     {
       "id": "8",
@@ -132,7 +133,8 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
-      "createdAt": "2024/04/05"
+      "createdAt": "2024/04/05",
+      "claps": 10
     },
     {
       "id": "IOPNA",
@@ -144,17 +146,6 @@
       "poster": "/images/blog1300.jpg",
       "createdAt": "2024-04-11T14:36:13+04:00",
       "claps": 6
-    },
-    {
-      "id": "slLC1",
-      "title": "dsadsadasd sald nsald ",
-      "description": [
-        "dsa;lkjads k",
-        "dsadsadsa"
-      ],
-      "poster": "/images/blog-8.jpg",
-      "createdAt": "2024-04-11T14:38:32+04:00",
-      "claps": 0
     }
   ]
 }
