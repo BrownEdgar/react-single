@@ -2,10 +2,16 @@ import React from 'react'
 import './CurrentBlog.scss'
 import clapsIcon from '../../assets/clap-svgrepo-com.svg'
 import DisplayDate from '../DisplayDate/DisplayDate'
+import { Link } from 'react-router-dom'
+import ROUTES from '../../routes'
 
-export default function CurrentBlog({ blog, handleClaps }) {
+export default function CurrentBlog({ blog, handleClaps, handleDelete }) {
   return (
     <div className="CurrentBlog">
+      <Link className='link' to={`/${ROUTES.BLOGS}`}>
+        <i className="bi bi-arrow-bar-left"></i>
+        all blogs
+      </Link>
       <h1>{blog.title}</h1>
       <img src={blog.poster} />
       <div className='CurrentBlog__content'>
@@ -38,6 +44,7 @@ export default function CurrentBlog({ blog, handleClaps }) {
           </span>
 
           <DisplayDate date={blog.createdAt} size='lg' />
+          <button className='CurrentBlog__btn CurrentBlog__btn-delete' onClick={() => handleDelete(blog.id)}>Delete this blog</button>
         </div>
       </div>
     </div>

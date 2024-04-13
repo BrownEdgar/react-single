@@ -16,7 +16,7 @@ export default function App() {
           <Route index element={<News />} />
           <Route element={<PrivateRoutes />}>
             <Route path={ROUTES.POSTS} element={<Services />} />
-            <Route path={ROUTES.WORK} element={<Work />} />
+            <Route path={ROUTES.BLOGS} element={<Work />} />
             <Route path={ROUTES.BLOG} element={<Blog />} />
             <Route path={ROUTES.STORE} element={<Store />} />
             <Route path={ROUTES.ADD_BLOG} element={<AddBlog />} />

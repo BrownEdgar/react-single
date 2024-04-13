@@ -18,23 +18,6 @@
       "claps": 23
     },
     {
-      "id": "2",
-      "title": "Satisfaction lies in the effort",
-      "poster": "/images/blog-6.webp",
-      "description": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.",
-        "Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor."
-      ],
-      "list": [
-        "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
-        "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus.",
-        "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
-      ],
-      "createdAt": "2024/04/05",
-      "claps": 57
-    },
-    {
       "id": "3",
       "title": "Satisfaction lies in the effort",
       "poster": "/images/blog-7.webp",
@@ -135,17 +118,6 @@
       ],
       "createdAt": "2024/04/05",
       "claps": 10
-    },
-    {
-      "id": "IOPNA",
-      "title": "my first post with formik",
-      "description": [
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusamus laboriosam, esse ea quis dolorum repellat harum dolor commodi eum rem in deleniti tempore quo voluptatem nostrum omnis assum",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusamus laboriosam, esse ea quis dolorum repellat harum dolor commodi eum rem in deleniti tempore quo voluptatem nostrum omnis assum"
-      ],
-      "poster": "/images/blog1300.jpg",
-      "createdAt": "2024-04-11T14:36:13+04:00",
-      "claps": 6
     }
   ]
 }

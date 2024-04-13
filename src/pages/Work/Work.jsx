@@ -3,13 +3,13 @@ import blogReducer, { initialState } from './blogReducer'
 import { Link } from 'react-router-dom'
 import './Work.scss'
 import axios from 'axios'
-import moment from 'moment'
+import DisplayDate from '../../components/DisplayDate/DisplayDate'
 
 export default function Work() {
   const [state, dispatch] = useReducer(blogReducer, initialState)
 
   useEffect(() => {
-    axios('http://localhost:3000/blogs')
+    axios(import.meta.env.VITE_DB_URL)
       .then(res => dispatch({ type: "add_blogs", payload: res.data }))
   }, [])
 
@@ -17,7 +17,7 @@ export default function Work() {
   return (
     <div className='Work'>
       <div className="Work__header">
-        <h1>BLOG</h1>
+        <h1>OUR BLOG</h1>
       </div>
       <div className="Work__wrapper">
         {state.map(elem => {
@@ -25,7 +25,7 @@ export default function Work() {
             <Link key={elem.id} to={`${elem.id}`}>
               <img src={elem.poster} />
               <h2>{elem.title}</h2>
-              <p>{moment(elem.createdAt).format("DD MMM YYYY")}</p>
+              <DisplayDate date={elem.createdAt} format="DD-MMM-YYYY" />
             </Link>
           )
         })}

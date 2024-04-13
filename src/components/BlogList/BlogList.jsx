@@ -12,7 +12,7 @@ export default function BlogList({ otherBlogs }) {
         otherBlogs.map((elem) => {
           return (
             <div key={elem.id}>
-              <Link to={`/work/${elem.id}`}>
+              <Link to={`/blogs/${elem.id}`}>
                 <img src={elem.poster} className='BlogList__poster' />
               </Link>
               <div>

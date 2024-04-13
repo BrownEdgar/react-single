@@ -43,10 +43,13 @@
     gap: 30px;
     & > a {
       color: #222;
-
+      user-select: none;
+      -webkit-user-drag: none;
       img {
         height: 300px;
         width: 400px;
+
+        -webkit-user-drag: none;
         object-fit: cover;
       }
     }

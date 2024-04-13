@@ -5,7 +5,7 @@ import ROUTES from '../../routes'
 
 const activeClassName = ({ isActive }) => isActive ? "active__link" : '';
 
-const menuList = ['News', 'Posts', 'Work', 'Store', "Animals", "add_blog"]
+const menuList = ['News', 'Posts', 'Blogs', 'Store', "Animals", "add_blog"]
 
 export default function Navbar({ isLogin }) {
   const login = () => {
