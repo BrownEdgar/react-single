@@ -1,0 +1,54 @@
+.Register{
+  width: 100%;
+  height: auto;
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  h1{
+    font-size: 76px;
+  }
+  h4{
+    font-size: 30px;
+  }
+  &__content{
+    width: 400px;
+    background-color: aquamarine;
+    height: 600px;
+    padding: 1em;
+    border-radius: 30px;
+    form{
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      .form-group{
+        display: flex;
+        flex-direction: column;
+        input{
+          height: 40px;
+          padding-left: 20px;
+          border-radius: 8px;
+          border: none;
+          &[type="file"]{
+            background-color: white;
+            padding-top: 10px;
+          }
+        }
+      }
+      input[type="submit"]{
+        height: 50px;
+        font-weight: 800;
+        font-size: 24px;
+        width: 150px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover{
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
