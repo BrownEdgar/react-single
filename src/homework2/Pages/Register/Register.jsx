@@ -19,8 +19,6 @@ const validationSchema = object({
 })
 
 export default function Register( {handleSubmit} ) {
-  
-
 
   return (
     <div className='Register'>

@@ -1,0 +1,68 @@
+.Login{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1564865878688-9a244444042a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover ;
+  padding: 5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  
+  &__form{
+    z-index: 1;
+    height: 400px; 
+    width: 300px; 
+    border-radius: 20px;
+    padding: 20px; 
+    background-color: rgba(218, 84, 231, 0.283);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.347) 0px 48px 100px 0px;
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-group{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        input{
+          height: 40px;
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+      input[type="submit"]{
+        height: 40px;
+        width: 100px;
+        background: linear-gradient(90deg, rgba(58,118,180,1) 0%, rgba(29,124,253,1) 50%, rgba(69,153,252,1) 100%);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        font-weight: 900;
+        &:hover{
+          background: linear-gradient(90deg, rgba(58,118,180,0.8) 0%, rgba(29,124,253,0.8) 50%, rgba(69,153,252,0.8) 100%);
+          cursor: pointer;
+        }
+      }
+    }
+    a{
+      color: white;
+      animation-name: anime1;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      margin-top: 20px;
+    }
+  }
+}
+
+@keyframes anime1 {
+  0% {font-size: 24px;}
+  50% {font-size: 20px;}
+  100% {font-size: 24px;}
+}

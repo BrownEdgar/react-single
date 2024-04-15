@@ -1,10 +1,8 @@
-import React from 'react'
-import {Formik, Form, Field, ErrorMessage, validateYupSchema} from 'formik'
-import { nanoid } from "nanoid"
+import React  from 'react'
+import {Formik, Form, Field} from 'formik'
 import "./Register.scss"
 
 const initialValues = {
-  id: nanoid(7),
   firstName: "",
   lastName: "",
   username: "",
@@ -14,15 +12,14 @@ const initialValues = {
 }
 
 export default function Register({handleSubmit}) {
+  
+
   return (
     <div className='Register'>
-      <h1>Are you a developer?</h1>
-      <h4>Register here!</h4>
-      <div className="Register__content">
+      <div className="Register__form">
         <Formik
           initialValues={initialValues}
           onSubmit={handleSubmit}
-          validationSchema={validateYupSchema}
         >
           {
             (formik)=>{
@@ -59,6 +56,10 @@ export default function Register({handleSubmit}) {
             }
           }
         </Formik>
+      </div>
+      <div className="Register__content">
+        <h1>Are you a developer?</h1>
+        <h4>Register here!</h4>
       </div>
     </div>
   )
