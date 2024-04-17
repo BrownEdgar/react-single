@@ -30,7 +30,7 @@ header{
           font-size: 12px;
         }
       }
-      .log{
+      button{
         background: #FF4742;
         border: 1px solid #FF4742;
         border-radius: 6px;
@@ -64,9 +64,6 @@ header{
         &:active { 
           opacity: 0.5;
         } 
-      }
-      .logout{ 
-        display: none;
       }
     }
   }

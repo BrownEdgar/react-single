@@ -3,7 +3,20 @@ import { NavLink, Link } from 'react-router-dom'
 import ROUTES from "../routes"
 import "./Navbar.scss"
 
-export default function Navbar() {
+const activeClassName = ({isActive}) => isActive ? "active__link" : "";
+const menuList = ["Home","Developers","Lessons","Work","Contact","Register"]
+
+export default function Navbar({ isLogin }) {
+  const login = () =>{
+    localStorage.setItem("login", true)
+    window.location.href = "/"
+  }
+
+  const logout = () =>{
+    localStorage.removeItem("login")
+    window.location.href = "/"
+  }
+
   return (
     <header className='Navbar'>
       <div className='home'>
@@ -13,27 +26,26 @@ export default function Navbar() {
       </div>
       <nav>
         <ul>
-          <li>
-            <NavLink to={ROUTES.DEVELOPERS}>Developers</NavLink>
-          </li>
-          <li>
-            <NavLink to={ROUTES.LESSONS}>Lessons</NavLink>
-          </li>
-          <li>
-            <NavLink to={ROUTES.WORK}>Work</NavLink>
-          </li>
-          <li>
-            <NavLink to={ROUTES.CONTACT}>Contact Us</NavLink>
-          </li>
+          {
+            menuList.map(elem=>{
+              const path = (elem === "home")
+                ? ROUTES.HOME
+                : `${ROUTES[elem.toUpperCase()]}`
+              return(
+                <li key={elem}>
+                  <NavLink to={path} className={activeClassName}>{elem}</NavLink>
+                </li>
+              )
+            })
+          }
           <li className="login log">
             <NavLink to={ROUTES.LOGIN}>Login</NavLink>
           </li>
-          <li className='logout log'>
-            <NavLink to={ROUTES.HOME}>Logout</NavLink>
-          </li>
-          <li>
-            <NavLink to={ROUTES.REGISTER}>Register</NavLink>
-          </li>
+          {
+            isLogin
+              ? <button onClick={logout}>Log Out</button>
+              : <button onClick={login}>Log In</button>
+          }
         </ul>
       </nav>
     </header>

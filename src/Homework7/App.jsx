@@ -22,8 +22,8 @@ export default function App() {
 
   return (
     <div className='App'>
-      <Navbar/>
       <Routes>
+        <Route index element={<Home/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login users={users}/>}/>
         <Route path='/register' element={<Register handleSubmit={handleSubmit}/>}/>
