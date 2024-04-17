@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { AddBlog, Animals, Blog, ErrorPage, News, Post, Services, Store, Work } from './Pages'
+import { AddBlog, Animals, Blog, ErrorPage, News, Post, Services, Store, Work } from './pages'
 import { Routes, Route } from 'react-router-dom'
 import './App.scss'
 import ROUTES from './routes'
@@ -10,7 +10,6 @@ import PrivateRoutes from './Layouts/PrivateRoutes'
 export default function App() {
   return (
     <div className='App'>
-
       <Routes>
         <Route path='/' element={<MainLayoutes />}>
           <Route index element={<News />} />
@@ -23,14 +22,10 @@ export default function App() {
             <Route path={ROUTES.ANIMALS} element={<Animals />} />
             <Route path={ROUTES.POST} element={<Post />} />
           </Route>
-
           <Route path='*' element={<ErrorPage />} />
           {/* <Route path='*' element={<Navigate to={'/'} />} /> */}
         </Route>
-
       </Routes>
-
-
     </div>
   )
 }

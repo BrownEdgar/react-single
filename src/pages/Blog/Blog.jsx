@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'
 import BlogList from '../../components/BlogList/BlogList';
-
-
-
 import axios from 'axios';
-
 import './Blog.scss'
 import CurrentBlog from '../../components/CurrentBlog/CurrentBlog';
 

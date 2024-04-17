@@ -15,7 +15,7 @@
         "Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus."
       ],
       "createdAt": "2024/04/05",
-      "claps": 23
+      "claps": 31
     },
     {
       "id": "3",
@@ -118,6 +118,138 @@
       ],
       "createdAt": "2024/04/05",
       "claps": 10
+    },
+    {
+      "id": "-GRKb",
+      "title": "My blog 1",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/photo-1710769509812-1b5cf1605362.avif",
+      "createdAt": "2024-04-16T09:49:04+04:00",
+      "claps": 0
+    },
+    {
+      "id": "fLAgT",
+      "title": "My blog 2",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/photo-1712939706943-b6b3b4549937.avif",
+      "createdAt": "2024-04-16T09:49:49+04:00",
+      "claps": 0
+    },
+    {
+      "id": "e-V9e",
+      "title": "My blog 3",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/photo-1712939707471-15dbed487f51.avif",
+      "createdAt": "2024-04-16T09:53:40+04:00",
+      "claps": 0
+    },
+    {
+      "id": "OzRi5",
+      "title": "My blog 4",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/photo-1713080045896-0b78f9a6bb55.avif",
+      "createdAt": "2024-04-16T09:53:58+04:00",
+      "claps": 0
+    },
+    {
+      "id": "9y2xA",
+      "title": "My blog 5",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/photo-1713149829686-4528dbee347a.avif",
+      "createdAt": "2024-04-16T09:54:22+04:00",
+      "claps": 0
+    },
+    {
+      "id": "iX1aP",
+      "title": "My blog 6",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nihil cum iste non dolor architecto veritatis nulla impedit neque accusantium, atque aspernatur possimus! Exercitationem molestiae consequu"
+      ],
+      "poster": "/images/premium_photo-1711509826483-8b0f3ddf484b.avif",
+      "createdAt": "2024-04-16T09:54:39+04:00",
+      "claps": 0
+    },
+    {
+      "id": "quBi5",
+      "title": "My blog 7",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/photo-1710769509812-1b5cf1605362.avif",
+      "createdAt": "2024-04-16T14:04:28+04:00",
+      "claps": 0
+    },
+    {
+      "id": "t49tQ",
+      "title": "My blog 8",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/photo-1712939706943-b6b3b4549937.avif",
+      "createdAt": "2024-04-16T14:04:45+04:00",
+      "claps": 0
+    },
+    {
+      "id": "mn8qh",
+      "title": "My blog 9",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/photo-1712939707471-15dbed487f51.avif",
+      "createdAt": "2024-04-16T14:05:14+04:00",
+      "claps": 0
+    },
+    {
+      "id": "Hl1dd",
+      "title": "My blog 10",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/photo-1713080045896-0b78f9a6bb55.avif",
+      "createdAt": "2024-04-16T14:05:28+04:00",
+      "claps": 0
+    },
+    {
+      "id": "kDSZO",
+      "title": "My blog 11",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/photo-1713149829686-4528dbee347a.avif",
+      "createdAt": "2024-04-16T14:05:47+04:00",
+      "claps": 0
+    },
+    {
+      "id": "pBOn-",
+      "title": "My blog 12",
+      "description": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam deleniti ullam quos mollitia, vel iusto voluptatibus ut libero? Aspernatur."
+      ],
+      "poster": "/images/premium_photo-1711509826483-8b0f3ddf484b.avif",
+      "createdAt": "2024-04-16T14:05:59+04:00",
+      "claps": 0
     }
   ]
 }
