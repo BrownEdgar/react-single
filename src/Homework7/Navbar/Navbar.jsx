@@ -38,14 +38,13 @@ export default function Navbar({ isLogin }) {
               )
             })
           }
-          <li className="login log">
-            <NavLink to={ROUTES.LOGIN}>Login</NavLink>
-          </li>
+          <li>
           {
             isLogin
-              ? <button onClick={logout}>Log Out</button>
-              : <button onClick={login}>Log In</button>
+            ? <button onClick={logout}>Log Out</button>
+            : <button onClick={login}>Log In</button>
           }
+          </li>
         </ul>
       </nav>
     </header>
