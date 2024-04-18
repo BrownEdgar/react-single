@@ -54,4 +54,28 @@
       }
     }
   }
+  &__list{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    li{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: rgb(216, 216, 216);
+      &:hover{
+        scale: 1.1;
+        cursor: pointer;
+      }
+      a{
+        padding: 5px;
+      }
+    }
+    .selected{
+      background-color: rgb(242, 74, 74);
+      color: white;
+    }
+  }
 }
