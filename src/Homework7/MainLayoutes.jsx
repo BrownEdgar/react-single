@@ -7,7 +7,7 @@ export default function MainLayoutes() {
   return (
     <>
       <Navbar isLogin={isLogin}/>
-      <Outlet context={isLogin}/>
+      <Outlet context={{isLogin}}/>
     </>
   )
 }
