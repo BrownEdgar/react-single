@@ -29,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<MainLayoutes/>}>
           <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login/>}/>
           <Route element={<PrivateLayoutes/>}>
             <Route path='/' element={<Home/>}/>
             <Route path='/developers' element={<Developers/>}/>
