@@ -1,6 +1,9 @@
 import React  from 'react'
 import {Formik, Form, Field} from 'formik'
 import "./Register.scss"
+import { useNavigate } from 'react-router-dom'
+import {nanoid} from "nanoid"
+import axios from 'axios'
 
 const initialValues = {
   firstName: "",
@@ -11,8 +14,29 @@ const initialValues = {
   file: ""
 }
 
-export default function Register({handleSubmit}) {
+export default function Register() {
+  const navigate = useNavigate()
+  const handleSubmit = (values,formik)=>{
+    const developer = {
+        id: nanoid(7),
+        firstName: values.firstName,
+        lastName: values.lastName,
+        username: values.username,
+        email: values.email,
+        password: values.password,
+        file: values.file
+      } 
+      axios.post('http://localhost:3000/developers', developer)
+      .then(res => {
+        formik.resetForm();
+        navigate('/')
+      })
+      formik.resetForm()
+    }
+
+
   
+
 
   return (
     <div className='Register'>
