@@ -9,18 +9,22 @@ import Pagination from '../../components/Pagination/Pagination'
 export default function Work() {
   const [state, dispatch] = useReducer(blogReducer, initialState)
   
-  useEffect(() => {
-    axios(import.meta.env.VITE_DB_URL)
-    .then(res => dispatch({ type: "add_blogs", payload: res.data }))
-  }, [])
   
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage, setPostsPerPage] = useState(9)
-  console.log(postsPerPage)
+  const [loading, setLoading] = useState(false)
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFistPost = indexOfLastPost - postsPerPage
   const currentPosts = state.slice(indexOfFistPost, indexOfLastPost)
-
+  
+  useEffect(() => {
+    setLoading(true)
+    axios(import.meta.env.VITE_DB_URL)
+    .then(res => dispatch({ type: "add_blogs", payload: res.data }))
+    .finally(()=>{
+      setTimeout(setLoading, 600, false);
+    })
+  }, [currentPage,postsPerPage])
   const paginate = (pageNumber) =>{setCurrentPage(pageNumber)}
   return (
     <div className='Work'>
