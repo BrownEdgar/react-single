@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './homeworks/Formik2/App'
+import App from './homeworks/usecontext/ArrayComponent'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
