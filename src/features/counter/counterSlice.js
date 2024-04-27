@@ -2,16 +2,24 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
   name: 'counter',
-  initialState: [],
+  initialState: 0,
   reducers: {
     addCounter: (state, action) => {
-      state.push(action.payload)
+      return state + action.payload;
     },
     minusCounter: (state, action) => {
       return state - 1;
     }
   },
-  extraReducers: (builder) => { },
+  extraReducers: (builder) => {
+    builder.addMatcher(
+      (action) => action.type.endsWith('/getAsyncUsers/fulfilled'),
+      (state, action) => {
+        return action.payload.length
+      },
+    )
+
+  },
   selectors: {
     getCounter: (state) => state // state  == initialState == 0
   }
