@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { addCount, getCounter, minusCount } from './features/counter/counterSlice'
-import {useSelector,useDispatch} from "react-redux"
+import { useSelector,useDispatch } from "react-redux"
+import { getAsyncTodos, getTodos } from './features/todos/todosSlice'
 
 export default function App() {
-  const counter = useSelector(getCounter)
+  const todos = useSelector(getTodos)
   const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAsyncTodos())
+  }, [])
+  
+
   return (
-    <div>
-      <h2>{counter}</h2>
-      <button onClick={()=>dispatch(addCount(5))}>add</button>
-      <button onClick={()=>dispatch(minusCount(5))}>minus</button>
+    <div> 
+      <p>{JSON.stringify(todos)}</p>
     </div>
   )
 }

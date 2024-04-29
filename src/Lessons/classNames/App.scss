@@ -1,0 +1,27 @@
+$light-bg-color: #eee;
+$dark-bg-color: #1d1d1d;
+
+
+.App{
+  width: 96%;
+  margin: 50px auto;
+  border-left:3px solid grey;
+  padding: 1em;
+
+  &__heading{
+    padding: 0.5em;
+    border-radius: 12px;
+
+    &-light{
+      background-color: $light-bg-color;
+      color: #1d1d1d;
+    }
+    &-dark{
+      background-color: $dark-bg-color;
+      color: #eee;
+    }
+    &:hover{
+      background-color: peru;
+    }
+  }
+}
