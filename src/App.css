@@ -5,38 +5,30 @@
   background-color: rgb(241, 241, 241);
 }
 
-.Blogs {
+.todos{
+  background-color: #eee;
+  padding: 2em;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
-
-.Blogs>div {
-  padding: 1em;
-  background-color: #fff;
-  flex-basis: 32%;
-
+.todo{
+  background-color: #c9c9c9;
+  height: 130px;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-
-.Blogs>div>h5 {
-  color: grey;
-  font-weight: 300;
-}
-
-.Blogs>div>p {
-  height: 80px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  transition: height 0.2s;
-}
-
-.Blogs>div>p.active {
-  height: 250px;
-  transition: height 0.5s;
-}
-
-button {
-  border: none;
-  background: transparent;
-  border-bottom: 3px solid;
+i{
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 22px;
   cursor: pointer;
+  color: #ff0000;
 }

@@ -12,7 +12,11 @@ const todosSlice = createSlice({
   name: "todos",
   initialState: [],
   reducers: {
-
+    remove:(state,action)=>{
+      state[0].filter(elem=> elem.id !== action.payload)
+      console.log(state)
+      console.log(123)
+    }
   },
   extraReducers:(builder)=>{
     builder
@@ -30,3 +34,4 @@ const todosSlice = createSlice({
 
 export default todosSlice.reducer
 export const {getTodos} = todosSlice.selectors
+export const {remove} = todosSlice.actions
