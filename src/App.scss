@@ -1,0 +1,12 @@
+@import "./sass/colors";
+
+.App {
+  .Title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: $main-text-color;
+    margin-bottom: 16px;
+  }
+}

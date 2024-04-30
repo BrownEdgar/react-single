@@ -11,15 +11,7 @@ const counterSlice = createSlice({
       return state - 1;
     }
   },
-  extraReducers: (builder) => {
-    builder.addMatcher(
-      (action) => action.type.endsWith('/getAsyncUsers/fulfilled'),
-      (state, action) => {
-        return action.payload.length
-      },
-    )
 
-  },
   selectors: {
     getCounter: (state) => state // state  == initialState == 0
   }
