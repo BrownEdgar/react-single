@@ -13,7 +13,7 @@ export default function App() {
   return (
     <ul className='todos'>
       {
-        todos[0].map(elem=>{
+        todos.map(elem=>{
           return(
             <li key={elem.id} className='todo'>
               {JSON.stringify(elem)}

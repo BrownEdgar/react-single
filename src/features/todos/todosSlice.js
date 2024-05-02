@@ -13,18 +13,13 @@ const todosSlice = createSlice({
   initialState: [],
   reducers: {
     remove:(state,action)=>{
-      state[0].filter(elem=> elem.id !== action.payload)
-      console.log(state)
-      console.log(123)
+      return state.filter(elem=> elem.id !== action.payload)
     }
   },
   extraReducers:(builder)=>{
     builder
-    .addCase(getAsyncTodos.pending, (state)=>{
-
-    })
     .addCase(getAsyncTodos.fulfilled, (state, action)=>{
-      state.push(action.payload)
+      state.push(...action.payload)
     })
   },
   selectors:{
