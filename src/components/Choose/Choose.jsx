@@ -8,13 +8,13 @@ export default function Choose() {
   const items = useSelector(getAllItems)
   return (
     <div className='Choose'>
-      <h1 className='Title Choose__title'>Why Choose Us?</h1>
+      <h1 className='Title Choose__title'>Why Choose Us? version 2</h1>
       <p className='Choose__paragraph'>Need to send something on time? Delivery is process of transporting goods from a source location to a predefined destination.</p>
 
       <div className='Choose__block'>
         {
           items.map(elem => {
-            console.log(elem)
+
             return (
               <div key={elem.id} style={{ backgroundColor: `${elem.bgColor}` }}>
                 <img src={elem.image} />

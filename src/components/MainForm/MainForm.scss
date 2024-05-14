@@ -1,0 +1,34 @@
+.MainForm {
+  width: 700px;
+  margin: 50px auto;
+  form {
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+    input {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      margin-bottom: 12px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: 2px solid grey;
+      &.btn {
+        background-color: green;
+        cursor: pointer;
+        color: #fff;
+        border: 0;
+      }
+      &[type="submit"] {
+        background-color: royalblue;
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #7c7c7c;
+    }
+  }
+}
