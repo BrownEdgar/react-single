@@ -1,44 +1,31 @@
 import React, { useState } from 'react'
-import Title from './UI/Title/Title'
 import './App.scss'
-import Modal from './Lessons/Modal/Modal'
+
+import Provider from './i18n/Provider'
+import LOCALES from './i18n/locale'
+import Translate from './i18n/Translate'
 
 export default function App() {
-  const [data, setdata] = useState(['html', 'css', 'Java Script', 'React.js', 'Node.js', 'Python'])
-  const [isOpen, setIsOpen] = useState(false);
-  const [deletedItem, setDeletedItem] = useState(null)
-
-  const toggleModal = () => setIsOpen(!isOpen);
-  const deletElementByName = () => {
-    setdata((prevData) => prevData.filter(elem => elem !== deletedItem));
-    toggleModal()
+  const [language, setLanguage] = useState(LOCALES.ENGLISH);
+  const handleChange = (e) => {
+    setLanguage(e.target.value)// RUSSIAN => 'ru-ru'
   }
-
   return (
-    <div className='App'>
-      {isOpen ? (
-        <Modal title='Are you sure' toggleModal={toggleModal}>
-          <button onClick={toggleModal}>close</button>
-          <button onClick={deletElementByName}>DELETE</button>
-        </Modal>
-      ) : null}
-
-      <Title variant='dark' title="React Modal example" size='xl' />
-      <div className="App__container">
-        {
-          data.map(elem => {
-            return (
-              <div key={elem}>
-                <h2>{elem}</h2>
-                <button className='App__delete' onClick={() => {
-                  toggleModal()
-                  setDeletedItem(elem)
-                }}>Delete</button>
-              </div>
-            )
-          })
-        }
+    <Provider locale={language}>
+      <div className='App'>
+        <select name="language" id="language" onChange={handleChange}>
+          <option value={LOCALES.ENGLISH}>en</option>
+          <option value={LOCALES.RUSSIAN}>ru</option>
+          <option value={LOCALES.ARMENIAN}>hy</option>
+        </select>
+        <div className="App__posts">
+          <Translate id='title' tagName='h1' className="box"
+            value={{ extraField: "it's amazing!" }} />
+          <Translate id='desc' tagName='p' className='selected' />
+          <Translate id='btnText' tagName='button' className='btn' />
+        </div>
       </div>
-    </div>
+    </Provider>
+
   )
 }
